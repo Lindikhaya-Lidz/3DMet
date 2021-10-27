@@ -1,0 +1,28 @@
+section{
+    background-color:rgba(139, 178, 178, 1);
+    //width:40%;
+    height:110vh;
+    color:rgb(253, 253, 253);
+   
+    .logo{
+        padding:5%;
+    }
+
+    h2,h3,p{
+        padding-left:5%;
+    }
+    
+    h2{
+        font-family: 'Poppins', sans-serif;
+        //font-family: 'Roboto', sans-serif;
+    }
+    p{
+        font-size:16px;
+    }
+    .art{
+        position:relative;
+        left:29%;
+        width:90%;
+        bottom:1.5%;
+    }
+}

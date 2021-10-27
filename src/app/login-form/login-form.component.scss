@@ -1,0 +1,50 @@
+section{
+    
+    h1{
+        position:relative;
+        left:85%;
+        font-weight:bolder;
+        top:6vh;
+    }
+    .federated-auth{
+        border:1px solid lightblue;
+        padding:7%;
+        position:relative ;
+        left:50%;
+        top:9vh;
+    }
+    .or{
+        position: relative;
+        left:95%;
+        font-family:sans-serif;
+        color:grey;
+        top:18vh;
+    }
+    form{
+        margin-left:50%;
+        margin-top:40%;
+        position: relative;
+        bottom:9vh;
+        input{
+            border:none;
+            border-bottom:1px solid rgb(189, 189, 189);
+            padding-top:5vh;
+            height:29px;
+            width:464px;
+        }
+        button{
+           background-color:rgba(139, 178, 178, 1);
+           width:464px;
+           height:35px;
+           border:none; 
+           margin-top:5vh;
+           border-radius:3px;
+           color:white; 
+        }    
+    }
+    .login{
+        position:relative;
+        left:50%;
+        bottom:7vh;
+    }
+}
