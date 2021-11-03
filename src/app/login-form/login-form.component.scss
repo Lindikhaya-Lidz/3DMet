@@ -1,24 +1,27 @@
 section{
-    
+   padding-right:20%;
+   position:relative;
+   bottom:10vh;
     h1{
         position:relative;
-        left:85%;
-        font-weight:bolder;
-        top:6vh;
+        left:50%;
+        font-weight:900;
+        top:13vh;
+        font-size:2rem;
     }
     .federated-auth{
-        border:1px solid lightblue;
+        //border:1px solid lightblue;
         padding:7%;
         position:relative ;
-        left:50%;
+        left:44%;
         top:9vh;
     }
     .or{
         position: relative;
-        left:95%;
+        left:109%;
+        top:10vh;
         font-family:sans-serif;
         color:grey;
-        top:18vh;
     }
     form{
         margin-left:50%;
@@ -27,14 +30,14 @@ section{
         bottom:9vh;
         input{
             border:none;
-            border-bottom:1px solid rgb(189, 189, 189);
+            border-bottom:1px solid rgb(209, 208, 208);
             padding-top:5vh;
             height:29px;
             width:464px;
         }
         button{
            background-color:rgba(139, 178, 178, 1);
-           width:464px;
+           width:474px;
            height:35px;
            border:none; 
            margin-top:5vh;
@@ -46,5 +49,14 @@ section{
         position:relative;
         left:50%;
         bottom:7vh;
+        font-family: 'Poppins', sans-serif;
+    }
+    .g_id_signin{
+        width:65%;
+    }
+    .fb-login-button{
+        position:relative;
+        left:80%;
+        bottom:4.8vh;
     }
 }

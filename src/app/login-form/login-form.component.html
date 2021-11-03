@@ -1,6 +1,21 @@
 <section>
     <h1>Create Account</h1>
     <div class='federated-auth'>
+        <div id="g_id_onload"
+         data-client_id="YOUR_GOOGLE_CLIENT_ID"
+         data-login_uri="https://your.domain/your_login_endpoint"
+         data-auto_prompt="false">
+      </div>
+      <div class="g_id_signin"
+         data-type="standard"
+         data-size="medium"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+      </div>
+
+      <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
     </div>
     <div class='or'>-OR-</div>
     <form>
@@ -9,5 +24,5 @@
         <input type='password' placeholder='Password'>
         <button type='submit'>Submit</button>
     </form>
-    <div class='login'>Already have an account <a href='#'>Login</a></div>
+    <div class='login'>Already have an account ? <a href='#' style='color:rgba(139, 178, 178, 1);text-decoration:none;'>Login</a></div>
 </section>
