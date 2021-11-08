@@ -18,11 +18,13 @@
       <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
     </div>
     <div class='or'>-OR-</div>
-    <form>
-        <input type='text' placeholder='Full Name'><br>
-        <input type='Email Address' placeholder='Email Address'><br>
-        <input type='password' placeholder='Password'>
+    <form #myForm ='ngForm'  (ngSubmit) = 'onSubmit(myForm.value)'>
+
+        <input type='text' [(ngModel)] ='user.fullName' [ngModelOptions]="{standalone: true}" placeholder='Full Name'required><br>
+        <input type='Email Address' [(ngModel)] ='user.emailAddress' [ngModelOptions]="{standalone: true}" placeholder='Email Address' required><br>
+        <input type='password' [(ngModel)]= 'user.password' [ngModelOptions]="{standalone: true}" placeholder='Password' required>
         <button type='submit'>Submit</button>
+
     </form>
     <div class='login'>Already have an account ? <a href='#' style='color:rgba(139, 178, 178, 1);text-decoration:none;'>Login</a></div>
 </section>
