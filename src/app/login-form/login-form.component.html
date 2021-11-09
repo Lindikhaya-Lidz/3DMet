@@ -18,13 +18,14 @@
       <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
     </div>
     <div class='or'>-OR-</div>
-    <form #myForm ='ngForm'  (ngSubmit) = 'onSubmit(myForm.value)'>
-
-        <input type='text' [(ngModel)] ='user.fullName' [ngModelOptions]="{standalone: true}" placeholder='Full Name'required><br>
-        <input type='Email Address' [(ngModel)] ='user.emailAddress' [ngModelOptions]="{standalone: true}" placeholder='Email Address' required><br>
-        <input type='password' [(ngModel)]= 'user.password' [ngModelOptions]="{standalone: true}" placeholder='Password' required>
+    <form #loginForm = 'ngForm'>
+        <input type='text' [(ngModel)] ='userData.user.fullName' #fullName = 'ngModel' name='names' placeholder='Full Name' required>
+        <div class='required'[hidden] ='fullName.valid || fullName.pristine'>full name is required</div>
+        <input type='email' [(ngModel)]='userData.user.emailAddress' #email='ngModel' name ='email' placeholder='EmailAddress' required>
+        <div class='required'[hidden] ='email.valid || email.pristine'>email is required</div>
+        <input type='password' [(ngModel)] = 'userData.user.password' #pass='ngModel' name ='password' placeholder='password' required>
+        <div class='required' [hidden] ='pass.valid || pass.pristine'>password is required</div>
         <button type='submit'>Submit</button>
-
     </form>
     <div class='login'>Already have an account ? <a href='#' style='color:rgba(139, 178, 178, 1);text-decoration:none;'>Login</a></div>
 </section>

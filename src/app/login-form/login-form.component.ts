@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormsModule} from'@angular/forms';
+import{ UserDataService }from'../user-data.service';
 
 @Component({
   selector: 'app-login-form',
@@ -10,17 +10,11 @@ export class LoginFormComponent implements OnInit {
   
   submitted:boolean = false;
 
-  user = {
-    fullName:'',
-    emailAddress:'',
-    password:''
-  }
-
   onSubmit(user:any){
-    console.log(user)
+    console.log(this.userData.user)
   }
 
-  constructor() { }
+  constructor(public userData:UserDataService) { }
 
   ngOnInit(): void {
   }
