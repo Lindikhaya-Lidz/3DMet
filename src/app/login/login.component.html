@@ -1,0 +1,8 @@
+<section>
+    <h1>Login</h1>
+    <form #loginForm ='ngForm'>
+        <input type='email' name='email' placeholder ='Email' required>
+        <input type='password' name='password' placeholder='password' required>
+        <button type='submit' (click) = 'login()' loginForm.reset()>submit</button>
+    </form>
+</section>

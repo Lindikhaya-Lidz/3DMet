@@ -1,0 +1,72 @@
+.createOrLogin{
+    padding-right:20%;
+    position:relative;
+    bottom:10vh;
+    h1{
+         position:relative;
+         left:50%;
+         top:13vh;
+         font-size:1.8rem;
+         font-family: 'Merriweather Sans', sans-serif;
+     }
+     .federated-auth{
+         //border:1px solid lightblue;
+         padding:7%;
+         position:relative ;
+         left:44%;
+         top:9vh;
+     }
+     .or{
+         position: relative;
+         left:109%;
+         top:10vh;
+         font-family:sans-serif;
+         color:grey;
+     }
+     form{
+         margin-left:50%;
+         margin-top:40%;
+         position: relative;
+         bottom:9vh;
+         input{
+             border:none;
+             border-bottom:1px solid rgb(209, 208, 208);
+             padding-top:5vh;
+             height:29px;
+             width:464px;
+         }
+         .required{
+            background-color:#fd2b273b;
+            font-family:sans-serif;
+            color:maroon;
+            padding:6px;
+            width:457px;
+            font-size:0.8rem;
+            border-radius:2px;
+        }
+        button{
+            background-color:rgba(139, 178, 178, 1);
+            width:474px;
+            height:35px;
+            border:none; 
+            margin-top:5vh;
+            border-radius:3px;
+            color:white; 
+         }    
+     }
+
+     .login{
+         position:relative;
+         left:50%;
+         bottom:7vh;
+         font-family: 'Poppins', sans-serif;
+     }
+     .g_id_signin{
+         width:65%;
+     }
+     .fb-login-button{
+         position:relative;
+         left:80%;
+         bottom:4.8vh;
+     }
+}
