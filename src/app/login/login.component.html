@@ -1,8 +1,13 @@
+<app-logo-and-materials></app-logo-and-materials>
 <section>
     <h1>Login</h1>
-    <form #loginForm ='ngForm'>
-        <input type='email' name='email' placeholder ='Email' required>
-        <input type='password' name='password' placeholder='password' required>
-        <button type='submit' (click) = 'login()'>submit</button>
+    <form #loginForm ='ngForm' (ngSubmit) ='login()'>
+        <input type='email' [(ngModel)]='userNameOrEmail' #email='ngModel' name='email' placeholder ='Email' required>
+        <div class='required'[hidden] ='email.valid || email.pristine'>email address is required</div>
+
+        <input type='password' [(ngModel)]='password' #pass='ngModel' name='password' placeholder='password' required>
+        <div class='required'[hidden] ='pass.valid || pass.pristine'>full password is required</div>
+        <button type='submit' [disabled]='!loginForm.valid'>submit</button><br>
     </form>
+    <div class='create-account'>Dont have an account?<a routerLink='/'>create an account</a></div>
 </section>

@@ -1,0 +1,62 @@
+section {
+  margin: 50%;
+  position: relative;
+  bottom: 10vh;
+}
+
+section h1 {
+  font-size: 2em;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+section form {
+  margin-left: 50%;
+  margin-top: 40%;
+  position: relative;
+  bottom: 5vh;
+}
+
+section form input {
+  border: none;
+  border-bottom: 1px solid #d1d0d0;
+  padding-top: 5vh;
+  height: 29px;
+  width: 464px;
+}
+
+section form .required {
+  background-color: #fd2b273b;
+  font-family: sans-serif;
+  color: maroon;
+  padding: 6px;
+  width: 457px;
+  font-size: 0.8rem;
+}
+
+section form button {
+  background-color: #8bb2b2;
+  width: 474px;
+  height: 35px;
+  border: none;
+  margin-top: 5vh;
+  border-radius: 3px;
+  color: white;
+}
+
+section .login {
+  position: relative;
+  left: 50%;
+  bottom: 7vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+section .g_id_signin {
+  width: 65%;
+}
+
+section .fb-login-button {
+  position: relative;
+  left: 80%;
+  bottom: 4.8vh;
+}
+/*# sourceMappingURL=login.component.css.map */

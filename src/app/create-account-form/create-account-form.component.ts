@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output, EventEmitter } from '@angular/core';
+//import { EventEmitter } from 'stream';
 import{ UserDataService }from'../user-data.service';
 
 @Component({
@@ -8,16 +9,30 @@ import{ UserDataService }from'../user-data.service';
 })
 
 export class CreateAccountFormComponent implements OnInit {
+  @Output() showHome = new EventEmitter<boolean>()
+  user = { 
+    fullName:'',
+    emailAddress:'',
+    password:''
+
+  }
   
   onSubmit(){
-    alert(`Account creation was successful, Welcome ${this.userData.user.fullName}`)
+    this.userData.createUser(this.user).subscribe();
+    console.log(this.user)
+    alert(`Account creation was successful, Welcome ${this.user.fullName}`);
+    return this.showHome.emit(true);
   }
 
   loginShow =false;
 
-  login(){
+  create(){
     this.loginShow = true;
   }
+  googleAuth(response:{}){
+    console.log(response)
+  }
+  
 
   constructor(public userData:UserDataService) { }
 

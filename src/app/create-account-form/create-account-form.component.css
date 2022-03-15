@@ -1,0 +1,81 @@
+.createOrLogin {
+  padding-right: 20%;
+  position: relative;
+  bottom: 10vh;
+}
+
+.createOrLogin h1 {
+  position: relative;
+  left: 50%;
+  top: 13vh;
+  font-size: 1.8rem;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.createOrLogin .federated-auth-sec {
+  padding: 7%;
+  position: relative;
+  left: 44%;
+  top: 9vh;
+}
+
+.createOrLogin .or {
+  position: relative;
+  left: 109%;
+  top: 10vh;
+  font-family: sans-serif;
+  color: grey;
+}
+
+.createOrLogin form {
+  margin-left: 50%;
+  margin-top: 40%;
+  position: relative;
+  bottom: 9vh;
+}
+
+.createOrLogin form input {
+  border: none;
+  border-bottom: 1px solid #d1d0d0;
+  padding-top: 5vh;
+  height: 29px;
+  width: 464px;
+}
+
+.createOrLogin form .required {
+  background-color: #fd2b273b;
+  font-family: sans-serif;
+  color: maroon;
+  padding: 6px;
+  width: 457px;
+  font-size: 0.8rem;
+  border-radius: 2px;
+}
+
+.createOrLogin form button {
+  background-color: #8bb2b2;
+  width: 474px;
+  height: 35px;
+  border: none;
+  margin-top: 5vh;
+  border-radius: 3px;
+  color: white;
+}
+
+.createOrLogin .login {
+  position: relative;
+  left: 50%;
+  bottom: 7vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.createOrLogin .g_id_signin {
+  width: 65%;
+}
+
+.createOrLogin .fb-login-button {
+  position: relative;
+  left: 80%;
+  bottom: 4.8vh;
+}
+/*# sourceMappingURL=create-account-form.component.css.map */

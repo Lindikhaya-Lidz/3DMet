@@ -74,6 +74,12 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+    
+          "options": {
+            "sslKey":"src/assets/https/localhost-key.pem",
+            "sslCert":"src/assets/https/localhost.pem",
+            "ssl":true
+          },
           "configurations": {
             "production": {
               "browserTarget": "material-models:build:production"

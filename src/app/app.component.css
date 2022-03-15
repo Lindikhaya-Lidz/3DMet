@@ -1,0 +1,10 @@
+section {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+section app-logo-form {
+  border-radius: 50%;
+}
+/*# sourceMappingURL=app.component.css.map */

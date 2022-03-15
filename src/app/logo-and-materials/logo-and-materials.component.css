@@ -1,0 +1,29 @@
+section {
+  background-color: #8bb2b2;
+  height: 110vh;
+  color: #fdfdfd;
+}
+
+section .logo {
+  padding: 5%;
+}
+
+section h2, section h3, section p {
+  padding-left: 5%;
+}
+
+section h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+section p {
+  font-size: 16px;
+}
+
+section .art {
+  position: relative;
+  left: 29%;
+  width: 90%;
+  bottom: 1.5%;
+}
+/*# sourceMappingURL=logo-and-materials.component.css.map */

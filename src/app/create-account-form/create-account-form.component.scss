@@ -1,7 +1,17 @@
+app-logo-and-materials{
+    display:grid;
+    position:absolute;
+    top:0%;
+    grid-template-columns: repeat(3,1fr);
+    //display:none;
+}
 .createOrLogin{
+    z-index:2;
     padding-right:20%;
     position:relative;
-    bottom:10vh;
+    bottom:-20%;
+    left:5%;
+    
     h1{
          position:relative;
          left:50%;
@@ -9,7 +19,7 @@
          font-size:1.8rem;
          font-family: 'Merriweather Sans', sans-serif;
      }
-     .federated-auth{
+     .federated-auth-sec{
          //border:1px solid lightblue;
          padding:7%;
          position:relative ;
@@ -27,7 +37,7 @@
          margin-left:50%;
          margin-top:40%;
          position: relative;
-         bottom:9vh;
+         bottom:42vh;
          input{
              border:none;
              border-bottom:1px solid rgb(209, 208, 208);
@@ -58,7 +68,7 @@
      .login{
          position:relative;
          left:50%;
-         bottom:7vh;
+         bottom:34vh;
          font-family: 'Poppins', sans-serif;
      }
      .g_id_signin{

@@ -1,34 +1,37 @@
+<app-logo-and-materials></app-logo-and-materials>
 <section class='createOrLogin' *ngIf='!loginShow'>
         <h1>Create Account</h1>
-        <div class='federated-auth'>
+        <!--
+        google federated auth
+        <div class='federated-auth-sec'>
             <div id="g_id_onload"
-            data-client_id="YOUR_GOOGLE_CLIENT_ID"
-            data-login_uri="https://your.domain/your_login_endpoint"
-            data-auto_prompt="false">
-        </div>
-        <div class="g_id_signin"
-            data-type="standard"
-            data-size="medium"
-            data-theme="outline"
-            data-text="sign_in_with"
-            data-shape="rectangular"
-            data-logo_alignment="left">
-        </div>
-
-        <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
-        </div>
-
+                data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                data-login_uri="https://your.domain/your_login_endpoint"
+                data-auto_prompt="false"
+                data-callback ='googleAuth'>
+            </div>
+            facebook federated auth
+            <div class="g_id_signin"
+                data-type="standard"
+                data-size="medium"
+                data-theme="filled_blue"
+                data-text="sign_in_with"
+                data-shape="regtangle"
+                data-logo_alignment="left">
+            </div>
+            <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+        </div>-->
+        
         <div class='or'>-OR-</div>
-        <form #loginForm = 'ngForm' (ngSubmit)='onSubmit()'>
-            <input type='text' [(ngModel)] ='userData.user.fullName' #fullName = 'ngModel' name='names' placeholder='Full Name' required>
+        <form #createForm = 'ngForm' (ngSubmit)='onSubmit()'>
+            <input type='text' [(ngModel)] ='user.fullName' #fullName = 'ngModel' name='names' placeholder='Full Name' required>
             <div class='required'[hidden] ='fullName.valid || fullName.pristine'>full name is required</div>
-            <input type='email' [(ngModel)]='userData.user.emailAddress' #email='ngModel' name ='email' placeholder='EmailAddress' required>
+            <input type='email' [(ngModel)]='user.emailAddress' #email='ngModel' name ='email' placeholder='EmailAddress' required>
             <div class='required'[hidden] ='email.valid || email.pristine'>email is required</div>
-            <input type='password' [(ngModel)] = 'userData.user.password' #pass='ngModel' name ='password' placeholder='password' required>
+            <input type='password' [(ngModel)] = 'user.password' #pass='ngModel' name ='password' placeholder='password' required>
             <div class='required' [hidden] ='pass.valid || pass.pristine'>password is required</div>
-            <button type='submit' ng-click='onSubmit()'>Submit</button>
+            <button type='submit'  [disabled] ='!createForm.valid' ng-click='onSubmit()'>Submit</button>
         </form>
-        <div class='login'>Already have an account ? <a href='#' (click)='login()' style='color:rgba(139, 178, 178, 1);text-decoration:none;'>Login</a></div>
+        <div class='login'>Already have an account ? <a routerLink='/login' style='color:rgba(139, 178, 178, 1);text-decoration:none;'>Login</a></div>
 </section>
-<app-login *ngIf='loginShow'></app-login>
 

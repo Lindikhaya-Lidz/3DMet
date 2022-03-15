@@ -1,55 +1,76 @@
+app-logo-and-materials{
+    display:grid;
+    position:absolute;
+    bottom:-8%;
+    grid-template-columns: repeat(3,1fr);
+}
 section{
-   margin:50%;
-   position:relative;
-   bottom:10vh;
-   h1{
+    //margin:50%;
+    position:relative;
+    top:15vw;
+    //padding:20%;
+ 
+    h1{
        font-size:2em;
        font-family: 'Merriweather Sans', sans-serif;
-   }
+    }
 
-form{
-    margin-left:50%;
-    margin-top:40%;
-    position: relative;
-    bottom:5vh;
-    input{
-        border:none;
-        border-bottom:1px solid rgb(209, 208, 208);
-        padding-top:5vh;
-        height:29px;
-        width:464px;
+    form{
+        margin-left:50%;
+        //margin-top:40%;
+        position: relative;
+        bottom:4vh;
+        input{
+            border:none;
+            border-bottom:1px solid rgb(209, 208, 208);
+            padding-top:5vh;
+            height:29px;
+            width:464px;
+        }
+        .required{
+            background-color:#fd2b273b;
+            font-family:sans-serif;
+            color:maroon;
+            padding:6px;
+            width:457px;
+            font-size:0.8rem;
+        }
+
+        button{
+        background-color:rgba(139, 178, 178, 1);
+        width:474px;
+        height:35px;
+        border:none; 
+        margin-top:5vh;
+        border-radius:3px;
+        color:white; 
+        }   
     }
-    .required{
-        background-color:#fd2b273b;
-        font-family:sans-serif;
-        color:maroon;
-        padding:6px;
-        width:457px;
-        font-size:0.8rem;
+    .create-account{
+
+        a{
+            text-decoration:none;
+            color:rgba(139, 178, 178, 1);
+            padding-left:0.5%;
+        }
     }
-    button{
-       background-color:rgba(139, 178, 178, 1);
-       width:474px;
-       height:35px;
-       border:none; 
-       margin-top:5vh;
-       border-radius:3px;
-       color:white; 
-    }    
-}
-.login{
-    position:relative;
-    left:50%;
-    bottom:7vh;
-    font-family: 'Poppins', sans-serif;
-}
-.g_id_signin{
-    width:65%;
-}
-.fb-login-button{
-    position:relative;
-    left:80%;
-    bottom:4.8vh;
-}
- 
+    .create-account,h1{
+        margin-left:50%;
+    }
+
+    .login{
+        position:relative;
+        left:50%;
+        bottom:7vh;
+        font-family: 'Poppins', sans-serif;
+    }
+    .g_id_signin{
+        width:65%;
+    }
+    .fb-login-button{
+        position:relative;
+        left:80%;
+        bottom:4.8vh;
+    }
+    
 }
