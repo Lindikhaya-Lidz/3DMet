@@ -1,8 +1,6 @@
 <app-logo-and-materials></app-logo-and-materials>
 <section class='createOrLogin' *ngIf='!loginShow'>
         <h1>Create Account</h1>
-        <!--
-        google federated auth
         <div class='federated-auth-sec'>
             <div id="g_id_onload"
                 data-client_id="YOUR_GOOGLE_CLIENT_ID"
@@ -10,7 +8,6 @@
                 data-auto_prompt="false"
                 data-callback ='googleAuth'>
             </div>
-            facebook federated auth
             <div class="g_id_signin"
                 data-type="standard"
                 data-size="medium"
@@ -20,7 +17,7 @@
                 data-logo_alignment="left">
             </div>
             <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
-        </div>-->
+        </div>
         
         <div class='or'>-OR-</div>
         <form #createForm = 'ngForm' (ngSubmit)='onSubmit()'>

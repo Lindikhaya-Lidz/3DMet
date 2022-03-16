@@ -9,35 +9,34 @@ app-logo-and-materials{
     z-index:2;
     padding-right:20%;
     position:relative;
-    bottom:-20%;
+    top:-40%;
     left:5%;
     
     h1{
          position:relative;
          left:50%;
-         top:13vh;
+         top:5vh;
          font-size:1.8rem;
          font-family: 'Merriweather Sans', sans-serif;
      }
      .federated-auth-sec{
-         //border:1px solid lightblue;
          padding:7%;
          position:relative ;
-         left:44%;
-         top:9vh;
+         left:43%;
+         top:2vh;
      }
      .or{
          position: relative;
-         left:109%;
-         top:10vh;
+         left:77%;
+         bottom:5vh;
          font-family:sans-serif;
          color:grey;
      }
      form{
-         margin-left:50%;
+         margin-left:53%;
          margin-top:40%;
          position: relative;
-         bottom:42vh;
+         bottom:70vh;
          input{
              border:none;
              border-bottom:1px solid rgb(209, 208, 208);
@@ -67,16 +66,16 @@ app-logo-and-materials{
 
      .login{
          position:relative;
-         left:50%;
-         bottom:34vh;
+         left:54%;
+         bottom:66vh;
          font-family: 'Poppins', sans-serif;
      }
      .g_id_signin{
-         width:65%;
+         width:26%;
      }
      .fb-login-button{
          position:relative;
-         left:80%;
+         left:40%;
          bottom:4.8vh;
      }
 }
